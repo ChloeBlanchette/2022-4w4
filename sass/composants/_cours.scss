@@ -1,0 +1,44 @@
+.cours{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cours__carte{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 0 20px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: #2622201f;
+    color: #A15C38;
+    
+    @media screen and (min-width:$largeur__media-tablette) {
+        width: 40%;
+    }
+
+    @media screen and (min-width:$largeur__media-desktop) {
+        width: 28%;
+        margin: 19px;
+    }
+
+    &:hover {
+        background-color: rgba(38, 34, 32, 0.288);
+        transform: scale(1.05);
+        transition: transform .5s;
+    }
+}
+
+.cours__carte p {
+    font-family: 'Roboto';
+}
+
+.cours__carte p{
+    margin: 5px 0;
+}
+
+.cours__carte p:nth-of-type(1), .cours__carte p:nth-of-type(2){
+    font-weight: bold;
+}
