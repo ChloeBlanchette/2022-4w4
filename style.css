@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-Theme name: Exercice-1 Chloé Blanchette
+Theme name: Lab04 - Chloé Blanchette
 Author: Chloé Blanchette
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
@@ -359,6 +359,26 @@ a:hover, a:active {
   outline: 0;
 }
 
+.site__footer a {
+  color: #262220;
+}
+
+.site__footer a:visited {
+  color: red;
+}
+
+.site__footer a:hover, .site__footer a:focus, .site__footer a:active {
+  color: green;
+}
+
+.site__footer a:focus {
+  outline: thin dotted;
+}
+
+.site__footer a:hover, .site__footer a:active {
+  outline: 0;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTS
 --------------------------------------------------------- */
@@ -428,6 +448,19 @@ COMPOSANTS
 
 .cours__carte p:nth-of-type(1), .cours__carte p:nth-of-type(2) {
   font-weight: bold;
+}
+
+.footer__menu {
+  list-style-type: none;
+}
+
+.footer__menu .menu-item a {
+  display: flex;
+  align-items: center;
+}
+
+.footer__menu .menu-item a svg {
+  padding-right: 10px;
 }
 
 .site__header {

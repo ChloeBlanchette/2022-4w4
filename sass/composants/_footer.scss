@@ -1,0 +1,12 @@
+.footer__menu {
+    list-style-type: none;
+    
+    .menu-item a {
+        display: flex;
+        align-items: center;
+
+        svg {
+            padding-right: 10px;
+        }
+    }
+}
