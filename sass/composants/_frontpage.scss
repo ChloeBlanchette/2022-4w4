@@ -14,13 +14,12 @@
         font-family: $font__titre
     }
 
-    
-
     thead {
         background-color: $color__colorbackground-barre;
         color: white;
     }
 
+    // Alternance des couleurs de fond pour le tableau
     tbody tr:nth-child(odd) {
         background-color: #a15d3825;
     }
