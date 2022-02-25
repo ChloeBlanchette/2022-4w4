@@ -1,5 +1,5 @@
 /**
-Theme name: Lab04 - Chloé Blanchette
+Theme name: Exercice 2 - Chloé Blanchette
 Author: Chloé Blanchette
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
@@ -13,6 +13,7 @@ VARIABLES
 --------------------------------------------------------- */
 @import "variables/couleurs";
 @import "variables/structure";
+@import "variables/typo";
 
 /* ---------------------------------------------------------
 INITIALISATION
@@ -33,6 +34,15 @@ COMPOSANTS
 @import "composants/footer";
 @import "composants/header";
 @import "composants/navigation";
+@import "composants/404";
+@import "composants/recherche";
+@import "composants/frontpage";
+@import "composants/single";
+
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+@import "animation/entete";
 
 /* ---------------------------------------------------------
 LAYOUT

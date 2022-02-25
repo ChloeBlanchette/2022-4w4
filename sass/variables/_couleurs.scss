@@ -1,16 +1,24 @@
 // Changement des couleurs
+
+/* ---------------- BACKGROUND */
 $color__background-body: white;
 $color__colorbackground-header: #262220; //#BACAC1
 $color__colorbackground-barre: #a15d38b4;
 $color__colorbackground-main: #F7F1F0;//#262220
 $color__colorbackground-footer: #A15C38;
+$background__link-hover: #F7F1F0;
 
+/* ---------------- LIENS */
 $color__link: #262220;
 $color__link-visited: #262220;
 $color__link-hover: #262220;
 
-$color__link__footer: yellow;
-$color__link__footer-visited: red;
-$color__link__footer-hover: green;
+/* ---------------- LIENS HEADER */
+$color__link__header : #a15d38b4;
+$color__link__header-hover : white;
+$color__link__header-visited : #A15C38;
 
-$background__link-hover: #F7F1F0;
+/* ---------------- LIENS FOOTER */
+$color__link__footer: white;
+$color__link__footer-visited: #262220;
+$color__link__footer-hover: #A15C38;

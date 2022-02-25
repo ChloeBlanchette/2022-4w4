@@ -28,7 +28,7 @@
 
     @media screen and (min-width:$largeur__media-tablette) {
         display: block;
-        padding: 20px 0 0 0;
+        padding: 0 0 0 0;
     }
 }
 
@@ -50,6 +50,24 @@
         &:hover {
             background-color: #F7F1F0;
             transition: .5s;
+        }
+    }
+}
+
+.header__menu {
+    list-style-type: none;
+    padding: 45px 0 0 0;
+
+    @media screen and (min-width:$largeur__media-tablette) {
+        padding: 0 0 0 0;
+    }
+    
+    .menu-item a {
+        display: flex;
+        align-items: center;
+
+        svg {
+            padding-right: 10px;
         }
     }
 }

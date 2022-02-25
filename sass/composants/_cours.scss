@@ -33,7 +33,7 @@
 }
 
 .cours__carte p {
-    font-family: 'Roboto';
+    font-family: $font__main;
 }
 
 .cours__carte p{
@@ -42,4 +42,11 @@
 
 .cours__carte p:nth-of-type(1), .cours__carte p:nth-of-type(2){
     font-weight: bold;
+}
+
+.article {
+
+    &__contenu {
+        display: flex;
+    }
 }

@@ -1,0 +1,26 @@
+.principal {
+    font-family: $font__main;
+    background-color: $color__colorbackground-main;
+    padding: 35px 35px;
+
+    h1 {
+        margin: 0;
+        font-size: 3rem;
+        text-decoration: underline;
+    }
+
+    h1, h2, h3 {
+        font-family: $font__titre
+    }
+
+    
+
+    thead {
+        background-color: $color__colorbackground-barre;
+        color: white;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #a15d3825;
+    }
+}

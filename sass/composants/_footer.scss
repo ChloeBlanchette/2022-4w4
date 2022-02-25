@@ -1,5 +1,6 @@
 .footer__menu {
     list-style-type: none;
+    padding: 0;
     
     .menu-item a {
         display: flex;
@@ -8,5 +9,31 @@
         svg {
             padding-right: 10px;
         }
+    }
+}
+
+.site__footer {
+    
+    section {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1/3fr;
+        align-items: center;
+
+        @media screen and (min-width:$largeur__media-tablette) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+    }
+
+    p {
+        margin: 5%;
+    }
+
+    &__nav {
+        margin: 5%;
+    }
+
+    form {
+        margin: 5%;
     }
 }
