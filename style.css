@@ -2,6 +2,7 @@
 /**
 Theme name: Exercice 2 - Chloé Blanchette
 Author: Chloé Blanchette
+Author URI: https://github.com/ChloeBlanchette/
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
 Requires PHP: 7.0
@@ -492,7 +493,18 @@ COMPOSANTS
   padding-right: 10px;
 }
 
+.site__footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .site__footer section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solide #ddd;
+  flex: 0 0 30%;
+  justify-content: space-between;
+  align-items: center;
   display: grid;
   grid-template-rows: 1fr 1fr 1/3fr;
   align-items: center;
@@ -515,6 +527,15 @@ COMPOSANTS
 
 .site__footer form {
   margin: 5%;
+}
+
+.site__footer__colonne {
+  display: flex;
+}
+
+.site__footer__ligne {
+  display: flex;
+  flex-direction: column;
 }
 
 .site__header {
@@ -632,18 +653,18 @@ COMPOSANTS
   }
 }
 
-#chk-burger:checked ~ .menu-principal-container {
+#chk-burger:checked ~ .site__header__nav {
   display: block;
 }
 
-.menu-principal-container {
+.site__header__nav {
   display: none;
-  padding: 65px 0 0 0;
+  padding: 60px 0 0 0;
   margin: 0;
 }
 
 @media screen and (min-width: 576px) {
-  .menu-principal-container {
+  .site__header__nav {
     display: block;
     padding: 0 0 0 0;
   }
@@ -673,13 +694,8 @@ COMPOSANTS
 
 .header__menu {
   list-style-type: none;
-  padding: 45px 0 0 0;
-}
-
-@media screen and (min-width: 576px) {
-  .header__menu {
-    padding: 0 0 0 0;
-  }
+  padding: 0;
+  margin: 0;
 }
 
 .header__menu .menu-item a {

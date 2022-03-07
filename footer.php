@@ -1,4 +1,25 @@
 <footer class="site__footer">
+    <!-- première rangée de colonne -->
+    <div class="site__footer__colonne">
+        <section class="article">
+            <h2>Titre 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, nostrum! Saepe voluptates eius eaque numquam incidunt veniam commodi excepturi reprehenderit voluptas non! Alias quo, rerum perferendis nemo architecto odio iste?</p>
+        </section>
+        <section class="adresse">
+            sdjksjdlsajdlk
+        </section>
+        <section class="liens">
+            <?php wp_nav_menu(array(
+                        "menu"=>"externe")); ?>
+        </section>
+    </div>
+    <!-- section de plusieurs lignes -->
+    <div class="site__footer__ligne">
+        <section class="footer__description"></section>
+        <section class="footer__nav"></section>
+        <section class="copyright"></section>
+        <section class="footer__auteur"></section>
+    </div>
     <section>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam rerum quaerat repudiandae enim ullam minima, sit perspiciatis fugiat necessitatibus cum voluptate neque blanditiis facere? Aperiam vero excepturi modi a unde!</p>
         <?php

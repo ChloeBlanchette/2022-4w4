@@ -17,13 +17,13 @@
     }
 }
 
-#chk-burger:checked ~ .menu-principal-container {
+#chk-burger:checked ~ .site__header__nav {
     display: block;
 }
 
-.menu-principal-container {
+.site__header__nav {
     display: none;
-    padding: 65px 0 0 0;
+    padding: 60px 0 0 0;
     margin: 0;
 
     @media screen and (min-width:$largeur__media-tablette) {
@@ -57,11 +57,8 @@
 // Ajouter et ajuster les icône du menu principal
 .header__menu {
     list-style-type: none;
-    padding: 45px 0 0 0;
-
-    @media screen and (min-width:$largeur__media-tablette) {
-        padding: 0 0 0 0;
-    }
+    padding: 0;
+    margin: 0;
     
     .menu-item a {
         display: flex;

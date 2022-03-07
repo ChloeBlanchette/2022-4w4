@@ -14,8 +14,17 @@
 
 // Mise en page grid du footer
 .site__footer {
+    display: flex;
+    flex-direction: column;
     
     section {
+        display: flex;
+          flex-direction: column;
+          border: 1px solide #ddd;
+          flex: 0 0 30%;
+          justify-content: space-between;
+          align-items: center;
+        
         display: grid;
         grid-template-rows: 1fr 1fr 1/3fr;
         align-items: center;
@@ -36,5 +45,14 @@
 
     form {
         margin: 5%;
+    }
+
+    &__colonne {
+        display: flex;
+    }
+
+    &__ligne {
+        display: flex;
+        flex-direction: column;
     }
 }
