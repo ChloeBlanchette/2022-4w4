@@ -50,6 +50,7 @@
         animation: anim_bloc 2.2s 1s forwards;
     }
 
+    /* Changement de la position des blocs */
     @keyframes anim_bloc {
         0% {
             transform: translateY(-100vw);
