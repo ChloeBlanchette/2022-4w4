@@ -81,6 +81,7 @@ function my_register_sidebars() {
         )
     );
 
+    // Ajout de widgets pour la section en ligne du footer
     register_sidebar(
         array(
             'id'            => 'footer_ligne_1',
