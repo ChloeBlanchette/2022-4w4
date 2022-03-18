@@ -94,6 +94,7 @@ function my_register_sidebars() {
         )
     );
 
+    // Ajout d'un second widget pour la section ligne du footer pour les réseaux sociaux
     register_sidebar(
         array(
             'id'            => 'footer_ligne_2',
