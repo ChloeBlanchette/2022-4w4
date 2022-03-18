@@ -107,6 +107,7 @@ function my_register_sidebars() {
         )
     );
 
+    // Ajout d'un troisième widget pour la section ligne du footer pour les copyrights
     register_sidebar(
         array(
             'id'            => 'footer_ligne_3',
