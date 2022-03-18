@@ -16,7 +16,62 @@
 .site__footer {
     display: flex;
     flex-direction: column;
+    padding: 20px 20px 0 20px;
+    font-family: $font__main;
+    color: white;
+    font-size: 0.9rem;
+
+    a {
+        text-decoration: none;
+        color: $color__link-hover;
+    }
+
+    li {
+        padding: 3px 0 3px 0;
+    }
+
+    h2, h3 {
+        font-family: $font__titre;
+        color: $color__background-titre-footer;
+        font-size: 1.2rem;
+    }
+
+    .adresse {
+
+        p {
+            margin: 0;
+            padding: 2px 0 2px 0;
+        }
+    }
+
+    &__colonne {
+
+        @media screen and (min-width:$largeur__media-tablette) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        section {
+            margin: 20px;
+        }
+    }
+
+    &__ligne {
+        section {
+            margin: 20px;
+        }
+
+        @media screen and (min-width:$largeur__media-tablette) {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25px;
+        }
+    }
     
+    /*
     section {
         display: flex;
           flex-direction: column;
@@ -55,4 +110,5 @@
         display: flex;
         flex-direction: column;
     }
+    */
 }

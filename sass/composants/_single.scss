@@ -5,17 +5,18 @@
     padding: 0 20px;
     border-radius: 25px;
     padding: 15px;
-    background-color: #2622201f;
-    color: $color__colorbackground-footer;
+    background-color: $color__colorbackground-carte;
+    color: $color__link-hover;
     font-family: $font__titre;
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
+    padding-top: 50px;
 
     // Ajustement du contenu de l'article
     &__contenu {
         font-size: 1rem;
-        color: #262220a1;
+        color: $color__colorbackground-carte-titre;
         font-family: $font__main;
         font-weight: normal;
         text-align: justify;

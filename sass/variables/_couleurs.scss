@@ -2,23 +2,37 @@
 
 /* ---------------- BACKGROUND */
 $color__background-body: white;
-$color__colorbackground-header: #262220; //#BACAC1
-$color__colorbackground-barre: #a15d38b4;
-$color__colorbackground-main: #F7F1F0;//#262220
-$color__colorbackground-footer: #A15C38;
-$background__link-hover: #F7F1F0;
+$color__colorbackground-header: black;
+$color__colorbackground-barre: rgb(224, 224, 224);
+$color__colorbackground-main: white;
+$color__colorbackground-footer: #404040;
+$background__link-hover: black;
 
 /* ---------------- LIENS */
-$color__link: #262220;
-$color__link-visited: #262220;
-$color__link-hover: #262220;
+$color__link: black;
+$color__link-visited: black;
+$color__link-hover: white;
 
 /* ---------------- LIENS HEADER */
-$color__link__header : #a15d38b4;
-$color__link__header-hover : white;
-$color__link__header-visited : #A15C38;
+$color__link__header: #99D7DB;
+$color__link__header-hover: white;
+$color__link__header-visited: #99D7DB;
+
 
 /* ---------------- LIENS FOOTER */
 $color__link__footer: white;
-$color__link__footer-visited: #262220;
-$color__link__footer-hover: #A15C38;
+$color__link__footer-visited: white;
+$color__link__footer-hover: #99D7DB;
+
+/* ---------------- LIENS CARTE */
+$color__colorbackground-carte-titre: black;
+$color__colorbackground-carte: #026FB7;
+$color__colorbackground-carte-hover: #026fb77c;
+$color__colorbackground-carte-p: black;
+
+/* ---------------- INPUT RECHERCHE */
+$color__background-recherche: rgb(48, 48, 48);
+$color__background-input: black;
+
+$color__background-titre-footer: #99D7DB;
+$color__colorbackground-header-titre2: white;

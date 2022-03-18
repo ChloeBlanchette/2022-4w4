@@ -3,7 +3,7 @@
     font-family: arial;
     // color: white;
 	display: grid;
-    gap: 10px;
+    gap: 20px;
 	grid-template-columns: auto;
 	grid-template-areas:
 		"sidebar"
@@ -11,6 +11,22 @@
 		"main"
         "footer";
 }
+
+/*
+.home::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $color__background-body-clip;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+*/
 
 @media screen and (min-width:$largeur__media-tablette) {
     
@@ -32,13 +48,6 @@
 .site__footer{
     grid-area: footer;
     background-color: $color__colorbackground-footer;
-
-    p {
-        color: #F7F1F0;
-        font-family: 'Roboto';
-        font-size: .9rem;
-        text-align: justify;
-    }
 }
 
 .site__main{
@@ -47,8 +56,8 @@
 
     &__titre {
         font-family: 'Ubuntu';
-        margin: 40px 20px 20px 20px;
-        color: #A15C38;
+        
+        color: $color__link;
         text-align: center;
     }
 }

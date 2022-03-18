@@ -1,27 +1,15 @@
 // Création d'un fichier sass pour les modification du front page
 .principal {
     font-family: $font__main;
-    background-color: $color__colorbackground-main;
+    //background-color: $color__colorbackground-main;
     padding: 35px 35px;
 
-    h1 {
-        margin: 0;
-        font-size: 3rem;
-        text-decoration: underline;
-    }
-
     // Modification des polices de titre pour le front page
-    h1, h2, h3 {
+    h1, h2 {
         font-family: $font__titre
     }
 
-    thead {
-        background-color: $color__colorbackground-barre;
-        color: white;
-    }
-
-    // Alternance des couleurs de fond pour le tableau
-    tbody tr:nth-child(odd) {
-        background-color: #a15d3825;
+    h2 {
+        color: $color__colorbackground-carte;
     }
 }

@@ -8,8 +8,8 @@
         height: 35px;
         border: none;
         outline: none;
-        background-color: #3f3936;
-        color: #000000;
+        background-color: $color__background-recherche;
+        color: $color__background-input;
         
         @media screen and (min-width:$largeur__media-tablette) {
             width: 250px;
@@ -17,7 +17,7 @@
     } // .recherche__input {}
 
     &__bouton {
-        background-color: #3f3936;
+        background-color: $color__background-recherche;
         top: 0;
         right: 0;
         border: none;
@@ -48,16 +48,16 @@
         height: 35px;
         border: none;
         outline: none;
-        background-color: #3f3936;
-        color: #000000;
+        background-color: $color__background-recherche;
+        color: $color__background-input;
         
         @media screen and (min-width:$largeur__media-tablette) {
-            
+            width: 300px;
         }
     } // .recherche__input {}
 
     &__bouton {
-        background-color: #3f3936;
+        background-color: $color__background-recherche;
         top: 0;
         right: 0;
         border: none;

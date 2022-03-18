@@ -2,10 +2,15 @@
 .carte__titre{
     font-size: 1.4rem;
     padding-bottom: 5px;
-    border-bottom: 2px solid #262220a1;
-    color: #262220a1;
+    border-bottom: 2px solid $color__background-body;
+    color: $color__colorbackground-carte-titre;
     text-align: left;
     font-family: $font__titre;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .carte__code{
@@ -15,5 +20,5 @@
 .carte__description{
     font-size: 0.9rem;
     text-align: justify;
-    color: #262220a1;
+    color: $color__colorbackground-carte-titre;
 }
