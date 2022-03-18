@@ -5,6 +5,7 @@
     width: 100%;
     margin-bottom: 45px;
 
+    /* Ajustement de la grosseyr des blocs pour l'écran mobile */
     &__bloc {
         display: flex;
         flex-direction: row;
@@ -20,7 +21,7 @@
         color: white;
         //animation: anim_bloc 1s 1s forwards;
 
-        /* Ajustement de la grosseur des blocks pour les médias tablette et desktop */
+        /* Ajustement de la grosseur des blocs pour les médias tablette et desktop */
         @media screen and (min-width:$largeur__media-ecran-moyen) {
             width: 80px;
             height: 80px;
