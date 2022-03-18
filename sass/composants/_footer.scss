@@ -21,6 +21,7 @@
     color: white;
     font-size: 0.9rem;
 
+    /* Retrait du soulignement des liens du footer */
     a {
         text-decoration: none;
         color: $color__link-hover;
