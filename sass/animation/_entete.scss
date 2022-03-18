@@ -27,6 +27,7 @@
         }
     }
 
+    /* Ajout des délais d'animation pour l'animation du début */
     &__bloc:nth-of-type(1){
         animation: anim_bloc 1s 1s forwards;
     }
