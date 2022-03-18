@@ -55,7 +55,7 @@
     background-color: $color__colorbackground-main;
 
     &__titre {
-        font-family: 'Ubuntu';
+        font-family: $font__titre;
         
         color: $color__link;
         text-align: center;
