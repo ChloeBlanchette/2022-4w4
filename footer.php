@@ -19,6 +19,7 @@
         <section class="footer__sociaux">
             <?php get_sidebar( 'footer_ligne_2' ); ?> 
         </section>
+        <!-- Ajout de la barre de recherche avant les copyrights -->
         <div>
             <?php get_search_form(); ?>
         </div>
