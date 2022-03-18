@@ -20,6 +20,7 @@
         color: white;
         //animation: anim_bloc 1s 1s forwards;
 
+        /* Ajustement de la grosseur des blocks pour les médias tablette et desktop */
         @media screen and (min-width:$largeur__media-ecran-moyen) {
             width: 80px;
             height: 80px;
