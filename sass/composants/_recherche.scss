@@ -51,6 +51,7 @@
         background-color: $color__background-recherche;
         color: $color__background-input;
         
+        // Modification de la taille de la barre de recherche pour les médias tablette et desktop
         @media screen and (min-width:$largeur__media-tablette) {
             width: 300px;
         }
