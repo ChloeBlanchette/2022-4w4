@@ -1,5 +1,7 @@
 // Changement des couleurs
 
+/* Organisation des couleurs (retrait des couleurs dans les fichiers scss pour tous les ajouter ici) */
+
 /* ---------------- BACKGROUND */
 $color__background-body: white;
 $color__colorbackground-header: black;
@@ -34,5 +36,13 @@ $color__colorbackground-carte-p: black;
 $color__background-recherche: rgb(48, 48, 48);
 $color__background-input: black;
 
+/* ---------------- Couleur des titres du footer */
 $color__background-titre-footer: #99D7DB;
+
+/* ---------------- Couleur du titre #2 du header */
 $color__colorbackground-header-titre2: white;
+
+/* --------- Boutons / liens */
+$color__bouton__color: black;
+$color__bouton__background: #a3a3a3;
+$color__bouton__background--hover: rgb(224, 224, 224);

@@ -1,0 +1,38 @@
+/* -------------
+Navigation categorie cours
+---------------- */
+.menu-categorie_cours-container {
+
+    .menu { //ul
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        font-family: $font__titre;
+        font-weight: bold;
+
+        @media screen and (min-width:$largeur__media-desktop) {
+            flex-direction: row;
+        }
+
+        .menu-item { // li
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            background-color: $color__bouton__background;
+
+            a{
+                color: $color__bouton__color;
+                text-decoration: none;
+            }
+            
+            &:hover{
+                background-color: $color__bouton__background--hover;
+            }
+        }
+    }
+}

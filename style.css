@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /**
-Theme name: TP1 - Chloé Blanchette
+Theme name: 2022-4w4 Lab05 - Chloé Blanchette
 Author: Chloé Blanchette
 Author URI: https://github.com/ChloeBlanchette/
-Description: Premier travail pratique dans le cadre du cours 4W4
-Version: 1.0
+Description: Laboratoire 5 dans le cadre du cours 4W4
+Version: 1.0.0
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 Text Domain: cidw-4w4
@@ -12,13 +12,18 @@ Text Domain: cidw-4w4
 /* ---------------------------------------------------------
 VARIABLES
 --------------------------------------------------------- */
+/* Organisation des couleurs (retrait des couleurs dans les fichiers scss pour tous les ajouter ici) */
 /* ---------------- BACKGROUND */
 /* ---------------- LIENS */
 /* ---------------- LIENS HEADER */
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS CARTE */
 /* ---------------- INPUT RECHERCHE */
+/* ---------------- Couleur des titres du footer */
+/* ---------------- Couleur du titre #2 du header */
+/* --------- Boutons / liens */
 /* Point de rupture pour nos media queries */
+/* Organisation des typographies et ajout de la typo Courgette */
 /* ---------------------------------------------------------
 INITIALISATION
 --------------------------------------------------------- */
@@ -406,6 +411,43 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3, h4, h5 {
+  font-family: "Poppins", sans-serif;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTS
 --------------------------------------------------------- */
@@ -507,6 +549,10 @@ COMPOSANTS
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
   color: white;
   font-size: 0.9rem;
+  /* Retrait du soulignement des liens du footer */
+  /* Ajout d'un padding pour que les lignes soient moins collées entre elles */
+  /* Ajustement de la taille, couleur et font des titres du footer */
+  /* Ajustement des la section en colonne lorsque nous sommes en média tablette ou desktop */
   /*
     section {
         display: flex;
@@ -926,6 +972,88 @@ COMPOSANTS
   padding: 20px 45px 20px 0px;
 }
 
+/* -------------
+Navigation categorie cours
+---------------- */
+.menu-categorie_cours-container .menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {
+  .menu-categorie_cours-container .menu {
+    flex-direction: row;
+  }
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #a3a3a3;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover {
+  background-color: #e0e0e0;
+}
+
+.formation {
+  display: flex;
+  flex-direction: column;
+  background-position: 97% 3%;
+  background-repeat: no-repeat;
+}
+
+.formation h2 {
+  padding-top: 20px;
+  margin-left: 20px;
+}
+
+.formation__liste {
+  padding: 0 20px 20px 20px;
+}
+
+.formation__liste .web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+}
+
+.formation__liste .jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.formation__liste .comm {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=users");
+}
+
+.formation__liste .design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
+.formation__liste .utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.formation__liste .video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
+.formation__liste .creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -935,6 +1063,9 @@ ANIMATION
   align-items: center;
   width: 100%;
   margin-bottom: 45px;
+  /* Ajustement de la grosseyr des blocs pour l'écran mobile */
+  /* Ajout des délais d'animation pour l'animation du début */
+  /* Changement de la position des blocs */
 }
 
 .animation__bloc {
@@ -950,6 +1081,7 @@ ANIMATION
   border-radius: 100%;
   background-color: #026FB7;
   color: white;
+  /* Ajustement de la grosseur des blocs pour les médias tablette et desktop */
 }
 
 @media screen and (min-width: 873px) {
@@ -1048,7 +1180,7 @@ LAYOUT
 }
 
 .site__main__titre {
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   color: black;
   text-align: center;
 }

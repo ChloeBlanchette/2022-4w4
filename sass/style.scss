@@ -1,9 +1,9 @@
 /**
-Theme name: TP1 - Chloé Blanchette
+Theme name: 2022-4w4 Lab05 - Chloé Blanchette
 Author: Chloé Blanchette
 Author URI: https://github.com/ChloeBlanchette/
-Description: Premier travail pratique dans le cadre du cours 4W4
-Version: 1.0
+Description: Laboratoire 5 dans le cadre du cours 4W4
+Version: 1.0.0
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 Text Domain: cidw-4w4
@@ -26,6 +26,7 @@ INITIALISATION
 ELEMENTS
 --------------------------------------------------------- */
 @import "elements/links";
+@import "elements/balises";
 
 /* ---------------------------------------------------------
 COMPOSANTS
@@ -41,6 +42,8 @@ COMPOSANTS
 @import "composants/frontpage";
 // Ajout du composant single
 @import "composants/single";
+@import "composants/navigation_categorie_cours";
+@import "composants/formation";
 
 /* ---------------------------------------------------------
 ANIMATION
