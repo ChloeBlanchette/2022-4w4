@@ -42,6 +42,7 @@ Navigation categorie cours
             }
         }
 
+        // Ajustement des couleurs lorsque la catégorie est ou non sélectionnée
         .current-menu-item {
             background-color: $color__bouton__background-current;
             a {
