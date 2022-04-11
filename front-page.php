@@ -10,6 +10,7 @@
         <div class="animation__bloc">L</div>
     </section>
 
+    <!------------------------------- Ajout du menu accueil -------------------------------->
     <!------------------------------------ Menu accueil ------------------------------------>
     <?php wp_nav_menu(array("menu"=>"menu_accueil",
                             "container"=>"nav")); ?>
