@@ -60,6 +60,11 @@
         color: $color__link;
         text-align: center;
     }
+
+    // Changement de la typographie des liens pour trier le contenu des catégories
+    a {
+        font-family: $font__titre;
+    }
 }
 
 .site__barre{

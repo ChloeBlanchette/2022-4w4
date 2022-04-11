@@ -982,6 +982,10 @@ COMPOSANTS
 /* -------------
 Navigation categorie cours
 ---------------- */
+.menu-categorie_cours-container {
+  margin-top: 10px;
+}
+
 .menu-categorie_cours-container .menu {
   display: flex;
   flex-direction: column;
@@ -1259,6 +1263,10 @@ LAYOUT
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   color: black;
   text-align: center;
+}
+
+.site__main a {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
 }
 
 .site__barre {
