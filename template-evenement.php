@@ -1,3 +1,4 @@
+<!-- Ajout du fichier template-evenement.php -->
 <?php
 /**
  * Template Name: Événements
