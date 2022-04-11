@@ -1,0 +1,46 @@
+.menu-accueil-container {
+    animation: anim_menu_accueil 2.5s 0s forwards;
+
+    li:hover {
+        animation: forme_bloc .5s 0s forwards;
+    }
+}
+
+@keyframes anim_menu_accueil {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes forme_bloc {
+    0% {
+        border-radius: 20px;
+    }
+
+    100% {
+        border-radius: 0px;
+    }
+}
+
+
+.menu-evenement-container {
+    animation: anim_menu_evenement 2s .5s forwards;
+
+    li:hover {
+        animation: forme_bloc .5s 0s forwards;
+    }
+}
+
+@keyframes anim_menu_evenement {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
