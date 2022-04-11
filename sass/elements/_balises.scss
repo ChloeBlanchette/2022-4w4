@@ -2,8 +2,12 @@
 h1{
     font-size: 4rem;
 }
+// Ajustement du titre de la catégorie sélectionnée
 h2{
-    font-size: 3rem;
+    font-size: 1.8rem;
+    color: $color__colorbackground-carte;
+    font-family: $font__main;
+    text-align: center;
 }
 h3{
     font-size: 2rem;
@@ -22,7 +26,7 @@ p{
     font-family: $font__paragraphe_1;
 }
 
-h1, h2{
+h1 {
     font-family: $font__principal;
 }
 

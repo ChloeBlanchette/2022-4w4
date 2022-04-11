@@ -416,7 +416,10 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 1.8rem;
+  color: #026FB7;
+  font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
+  text-align: center;
 }
 
 h3 {
@@ -440,7 +443,7 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2 {
+h1 {
   font-family: "Montserrat", sans-serif;
 }
 
