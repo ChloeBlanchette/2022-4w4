@@ -11,7 +11,7 @@
 
     add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
 
-
+    // Ajout du menu accueil
     function cidw_4w4_enregistre_menu() {
         register_nav_menus(array(
                         'principal' => __('Menu principal', 'cidw_4w4'),
