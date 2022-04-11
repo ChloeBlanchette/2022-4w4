@@ -64,12 +64,14 @@
             }
         }
 
+        // Ajustement de l'alignement du titre touché par un autre sélecteur
         h2 {
             font-size: clamp(1.2rem, 2vw, 4rem);
             font-family: $font__titre;
             margin-left: 15px;
             margin-right: 15px;
             color: $color__colorbackground-header-titre2;
+            text-align: left;
 
             @media screen and (min-width:$largeur__media-tablette) {
                 padding: 0 1.5rem 0 0;

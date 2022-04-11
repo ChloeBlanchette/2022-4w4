@@ -731,6 +731,7 @@ COMPOSANTS
   margin-left: 15px;
   margin-right: 15px;
   color: white;
+  text-align: left;
 }
 
 @media screen and (min-width: 576px) {
