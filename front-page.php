@@ -14,6 +14,7 @@
     <?php wp_nav_menu(array("menu"=>"menu_accueil",
                             "container"=>"nav")); ?>
     
+    <!----------------------------- Ajout du menu des évenements ----------------------------->
     <!------------------------------------ Menu evenement ------------------------------------>
     <?php wp_nav_menu(array("menu"=>"evenement",
                             "container"=>"nav")); ?>

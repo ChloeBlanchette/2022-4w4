@@ -148,6 +148,8 @@
      * @param : WP_Query $query
      * @return l'objet WP_Q
     */
+
+    // Modification de les fonction query
     function cidw_4w4_pre_get_posts(WP_Query $query)
     {
         if (is_admin() 
