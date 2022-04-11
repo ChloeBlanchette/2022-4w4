@@ -25,6 +25,10 @@ Navigation categorie cours
             height: 50px;
             background-color: $color__bouton__background;
 
+            span, hr {
+                display: none;
+            }
+
             a{
                 color: $color__bouton__color;
                 text-decoration: none;
@@ -32,6 +36,13 @@ Navigation categorie cours
             
             &:hover{
                 background-color: $color__bouton__background--hover;
+            }
+        }
+
+        .current-menu-item {
+            background-color: $color__bouton__background-current;
+            a {
+                color: $color__bouton__color-current;
             }
         }
     }

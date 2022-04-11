@@ -16,20 +16,20 @@ $color__link-visited: black;
 $color__link-hover: white;
 
 /* ---------------- LIENS HEADER */
-$color__link__header: #99D7DB;
+$color__link__header: #84B9DC;
 $color__link__header-hover: white;
-$color__link__header-visited: #99D7DB;
+$color__link__header-visited: #84B9DC;
 
 
 /* ---------------- LIENS FOOTER */
 $color__link__footer: white;
 $color__link__footer-visited: white;
-$color__link__footer-hover: #99D7DB;
+$color__link__footer-hover: #84B9DC;
 
 /* ---------------- LIENS CARTE */
 $color__colorbackground-carte-titre: black;
 $color__colorbackground-carte: #026FB7;
-$color__colorbackground-carte-hover: #026fb77c;
+$color__colorbackground-carte-hover: #84B9DC;
 $color__colorbackground-carte-p: black;
 
 /* ---------------- INPUT RECHERCHE */
@@ -37,7 +37,7 @@ $color__background-recherche: rgb(48, 48, 48);
 $color__background-input: black;
 
 /* ---------------- Couleur des titres du footer */
-$color__background-titre-footer: #99D7DB;
+$color__background-titre-footer: #84B9DC;
 
 /* ---------------- Couleur du titre #2 du header */
 $color__colorbackground-header-titre2: white;
@@ -46,3 +46,6 @@ $color__colorbackground-header-titre2: white;
 $color__bouton__color: black;
 $color__bouton__background: #a3a3a3;
 $color__bouton__background--hover: rgb(224, 224, 224);
+
+$color__bouton__color-current: #026FB7;
+$color__bouton__background-current: black;

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-Theme name: 2022-4w4 Lab05 - Chloé Blanchette
+Theme name: 2022-4w4 Exercice 03 - Chloé Blanchette
 Author: Chloé Blanchette
 Author URI: https://github.com/ChloeBlanchette/
 Description: Laboratoire 5 dans le cadre du cours 4W4
@@ -380,7 +380,7 @@ a:hover, a:active {
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #99D7DB;
+  color: #84B9DC;
 }
 
 .site__footer a:focus {
@@ -396,7 +396,7 @@ a:hover, a:active {
 }
 
 .site__header a:visited {
-  color: #99D7DB;
+  color: #84B9DC;
 }
 
 .site__header a:hover, .site__header a:focus, .site__header a:active {
@@ -507,7 +507,7 @@ COMPOSANTS
 }
 
 .cours__carte:hover {
-  background-color: #026fb77c;
+  background-color: #84B9DC;
   transform: scale(1.05);
   transition: transform .5s;
 }
@@ -606,7 +606,7 @@ COMPOSANTS
 
 .site__footer h2, .site__footer h3 {
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
-  color: #99D7DB;
+  color: #84B9DC;
   font-size: 1.2rem;
 }
 
@@ -844,6 +844,10 @@ COMPOSANTS
   margin: 0;
 }
 
+.header__menu hr, .header__menu span {
+  display: none;
+}
+
 .header__menu .menu-item a {
   display: flex;
   align-items: center;
@@ -1001,6 +1005,10 @@ Navigation categorie cours
   background-color: #a3a3a3;
 }
 
+.menu-categorie_cours-container .menu .menu-item span, .menu-categorie_cours-container .menu .menu-item hr {
+  display: none;
+}
+
 .menu-categorie_cours-container .menu .menu-item a {
   color: black;
   text-decoration: none;
@@ -1008,6 +1016,14 @@ Navigation categorie cours
 
 .menu-categorie_cours-container .menu .menu-item:hover {
   background-color: #e0e0e0;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item {
+  background-color: black;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item a {
+  color: #026FB7;
 }
 
 .formation {
@@ -1052,6 +1068,63 @@ Navigation categorie cours
 
 .formation__liste .creation-3d {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
+}
+
+.menu-accueil-container .menu,
+.menu-evenement-container .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .menu-accueil-container .menu,
+  .menu-evenement-container .menu {
+    flex-direction: row;
+  }
+}
+
+.menu-accueil-container .menu li,
+.menu-evenement-container .menu li {
+  background-color: #84B9DC;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 576px) {
+  .menu-accueil-container .menu li,
+  .menu-evenement-container .menu li {
+    width: 25%;
+  }
+}
+
+.menu-accueil-container .menu li:hover,
+.menu-evenement-container .menu li:hover {
+  background-color: #026FB7;
+}
+
+.menu-accueil-container .menu li a,
+.menu-evenement-container .menu li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+}
+
+.menu-accueil-container .menu li hr,
+.menu-evenement-container .menu li hr {
+  margin: 5px 0 5px 0;
+  border: 0.5px solid;
+}
+
+.menu-accueil-container .menu li span,
+.menu-evenement-container .menu li span {
+  font-weight: normal;
+  font-size: 0.9rem;
+  font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
 }
 
 /* ---------------------------------------------------------
