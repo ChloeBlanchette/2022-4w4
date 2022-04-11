@@ -28,6 +28,7 @@ Navigation categorie cours
             height: 50px;
             background-color: $color__bouton__background;
 
+            // Retrait de la description qui est non nécessaire dans ce cas-ci
             span, hr {
                 display: none;
             }
