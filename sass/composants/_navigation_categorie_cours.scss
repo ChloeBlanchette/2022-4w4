@@ -13,6 +13,7 @@ Navigation categorie cours
         font-family: $font__titre;
         font-weight: bold;
 
+        // Adaptation du menu selon largeur des catégorie selon le type d'écran
         @media screen and (min-width:$largeur__media-desktop) {
             flex-direction: row;
         }
