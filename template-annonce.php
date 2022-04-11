@@ -1,3 +1,4 @@
+<!-- Ajout du fichier template-annonce.php -->
 <?php
 /**
  * Template Name: Annonce
