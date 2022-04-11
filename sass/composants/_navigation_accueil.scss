@@ -19,6 +19,7 @@
             padding: 15px;
             border-radius: 20px;
 
+            // Adaptation de la largeur des catégorie selon le type d'écran
             @media screen and (min-width:$largeur__media-tablette) {
                 width: 25%;
             }
