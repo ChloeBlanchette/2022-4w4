@@ -5,6 +5,7 @@ body {
 .site {
     background-color: $color__background-body;
     font-family: arial;
+    position: relative;
     // color: white;
 	display: grid;
     gap: 20px;

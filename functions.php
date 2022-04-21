@@ -153,8 +153,8 @@
     function cidw_4w4_pre_get_posts(WP_Query $query)
     {
         if (is_admin() 
-            || !is_main_query() 
-            || !is_category(array('cours', 'web', 'jeu', 'design', 'video', 'utilitaire', 'creation-3d'))) 
+            || !$query->is_main_query() 
+            || !$query->is_category(array('cours', 'web', 'jeu', 'design', 'video', 'utilitaire', 'creation-3d'))) 
         {
             /*
             $query->set('posts_per_page', -1);
@@ -165,8 +165,8 @@
         }
         else 
         {
-            $ordre = get_query_var('ordre');
-            $cle = get_query_var('cletri');
+            $ordre = get_query_var('ordre', 'asc');
+            $cle = get_query_var('cletri', 'title');
             $query->set('order', $ordre);
             $query->set('orderby', $cle);
 
