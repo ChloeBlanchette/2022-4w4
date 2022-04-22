@@ -15,6 +15,7 @@
         })
     }
 
+    // Ajout d'un fonction pour fermer la boite modale
     for (const bouton of boite__modale__fermeture) {
         
         bouton.addEventListener('mousedown', function() {
