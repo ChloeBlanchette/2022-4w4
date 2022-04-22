@@ -2,8 +2,8 @@
     position: fixed;
     top: 25%;
     left: 25%;
-    border: 5px solid #aaa;
-    background-color: #f00;
+    border: 5px solid $color__colorbackground-carte;
+    background-color: $color__link;
     width: 50vw;
     height: 50vh;
     transform: scale(0);
@@ -13,6 +13,67 @@
     &__texte{}
 
 }
-    .ouvrir {
-        transform: scale(1);
+
+.ouvrir {
+    transform: scale(1);
+}
+
+.fermer {
+    transform: scale(0);
+}
+
+.cours__desc__ouvrir {
+    margin-left: 5px;
+    padding: 1px 4px 1px 4px;
+    font-weight: bold;
+    border: none;
+    background-color: $color__link-hover;
+    font-size: 0.8rem;
+}
+
+.cours__desc__ouvrir:hover {
+    animation: anim__transition .2s ease-out forwards;
+}
+
+.boite__modale__fermeture {
+    margin: 5px;
+    border-radius: 100%;
+    border: 3px solid $color__colorbackground-carte;
+    background-color: transparent;
+    color: $color__colorbackground-carte;
+    font-family: $font__titre;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.boite__modale__fermeture:hover {
+    animation: anim__fermeture .2s ease-out forwards;
+}
+
+.boite__modale__texte {
+    color: $color__link-hover;
+    font-family: $font__titre;
+    font-size: 1.2rem;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes anim__transition {
+    0% {
+        background-color: $color__link-hover;
     }
+
+    100% {
+        background-color: $color__link;
+        color: $color__link__header-visited;
+        font-size: 0.9rem;
+    }
+}
+
+@keyframes anim__fermeture {
+    100% {
+        color: $color__link-hover;
+        border: 3px solid $color__link-hover;
+    }
+}

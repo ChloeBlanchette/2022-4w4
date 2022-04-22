@@ -1139,8 +1139,8 @@ Navigation categorie cours
   position: fixed;
   top: 25%;
   left: 25%;
-  border: 5px solid #aaa;
-  background-color: #f00;
+  border: 5px solid #026FB7;
+  background-color: black;
   width: 50vw;
   height: 50vh;
   transform: scale(0);
@@ -1149,6 +1149,65 @@ Navigation categorie cours
 
 .ouvrir {
   transform: scale(1);
+}
+
+.fermer {
+  transform: scale(0);
+}
+
+.cours__desc__ouvrir {
+  margin-left: 5px;
+  padding: 1px 4px 1px 4px;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+  font-size: 0.8rem;
+}
+
+.cours__desc__ouvrir:hover {
+  animation: anim__transition .2s ease-out forwards;
+}
+
+.boite__modale__fermeture {
+  margin: 5px;
+  border-radius: 100%;
+  border: 3px solid #026FB7;
+  background-color: transparent;
+  color: #026FB7;
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.boite__modale__fermeture:hover {
+  animation: anim__fermeture .2s ease-out forwards;
+}
+
+.boite__modale__texte {
+  color: white;
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  font-size: 1.2rem;
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes anim__transition {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: black;
+    color: #84B9DC;
+    font-size: 0.9rem;
+  }
+}
+
+@keyframes anim__fermeture {
+  100% {
+    color: white;
+    border: 3px solid white;
+  }
 }
 
 /* ---------------------------------------------------------
