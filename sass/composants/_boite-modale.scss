@@ -76,6 +76,7 @@
     }
 }
 
+// Création de l'animation du survol du bouton de fermeture
 @keyframes anim__fermeture {
     100% {
         color: $color__link-hover;
