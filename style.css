@@ -1147,27 +1147,6 @@ Navigation categorie cours
   transition: all 1s ease-in-out;
 }
 
-.ouvrir {
-  transform: scale(1);
-}
-
-.fermer {
-  transform: scale(0);
-}
-
-.cours__desc__ouvrir {
-  margin-left: 5px;
-  padding: 1px 4px 1px 4px;
-  font-weight: bold;
-  border: none;
-  background-color: white;
-  font-size: 0.8rem;
-}
-
-.cours__desc__ouvrir:hover {
-  animation: anim__transition .2s ease-out forwards;
-}
-
 .boite__modale__fermeture {
   margin: 5px;
   border-radius: 100%;
@@ -1190,6 +1169,27 @@ Navigation categorie cours
   margin: 5%;
   display: flex;
   justify-content: center;
+}
+
+.ouvrir {
+  transform: scale(1);
+}
+
+.fermer {
+  transform: scale(0);
+}
+
+.cours__desc__ouvrir {
+  margin-left: 5px;
+  padding: 1px 4px 1px 4px;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+  font-size: 0.8rem;
+}
+
+.cours__desc__ouvrir:hover {
+  animation: anim__transition .2s ease-out forwards;
 }
 
 @keyframes anim__transition {
