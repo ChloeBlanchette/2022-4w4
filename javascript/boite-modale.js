@@ -15,9 +15,10 @@
         })
     }
 
-    // Ajout d'un fonction pour fermer la boite modale
+    // Ajout d'une fonction pour fermer la boite modale
     for (const bouton of boite__modale__fermeture) {
         
+        // On ajoute un écouteur d'événement qui détexte le click de la souris sur le bouton
         bouton.addEventListener('mousedown', function() {
             // console.log(this.parentNode.parentNode.className);
             boite__modale.classList.remove('ouvrir');
