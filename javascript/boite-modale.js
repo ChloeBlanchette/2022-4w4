@@ -14,6 +14,8 @@
             // console.log(this.parentNode.parentNode.className);
             // On ajoute la classe ouvrir à celle de la boite
             boite__modale.classList.add('ouvrir');
+            // On retire la classe fermer à celle de la boite
+            boite__modale.classList.remove('fermer');
             console.log(boite__modale.classList);
         })
     }
