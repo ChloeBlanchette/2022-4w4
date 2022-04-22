@@ -13,7 +13,7 @@
         $nbHeures = get_field("nombre_dheures");
         $departement = get_field("departement");
 
-        $descCours = wp_trim_words(get_the_content(), 15, "<a href='#'> La suite </a>;");
+        $descCours = wp_trim_words(get_the_content(), 15, "<button class='cours__desc__ouvrir' href='#'> La suite </button>");
         /*  $posDebutHeures = strrpos($titre, '(') + 1;
             $posFinHeures = strrpos($titre, ')');
             $nbHeures = substr($titre, $posDebutHeures, $posFinHeures - $posDebutHeures);
@@ -27,6 +27,6 @@
     </h2>
     <p class="carte__code"><?= substr(get_the_title(), 0, 7) ?></p>
     <p><?= $nbHeures; ?></p>
-    <p class="carte__description"><?= get_the_excerpt() ?></p>
+    <p class="carte__description"><?= $descCours ?></p>
     <p class="cours__departement"><?= $departement; ?></p>
 </article>
