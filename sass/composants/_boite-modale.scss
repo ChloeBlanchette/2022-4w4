@@ -63,6 +63,7 @@
     }
 }
 
+// Création de l'animation du survol du bouton d'ouverture
 @keyframes anim__transition {
     0% {
         background-color: $color__link-hover;
