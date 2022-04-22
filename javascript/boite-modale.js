@@ -12,6 +12,7 @@
         // On ajoute un écouteur d'événement qui détecte le click de la souris sur le bouton La suite
         bout.addEventListener('mousedown', function() {
             // console.log(this.parentNode.parentNode.className);
+            // On ajoute la classe ouvrir à celle de la boite
             boite__modale.classList.add('ouvrir');
             console.log(boite__modale.classList);
         })
