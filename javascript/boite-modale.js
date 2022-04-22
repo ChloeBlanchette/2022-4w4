@@ -6,6 +6,7 @@
     // Ajout de la variable ciblant le bouton de fermeture de la boite modale
     let boite__modale__fermeture = document.querySelectorAll(".boite__modale__fermeture");
 
+    // Ajout d'une fonction pour l'ouverture de la boite modale
     for (const bout of cours__desc__ouvrir) {
         
         bout.addEventListener('mousedown', function() {
@@ -21,7 +22,10 @@
         // On ajoute un écouteur d'événement qui détexte le click de la souris sur le bouton
         bouton.addEventListener('mousedown', function() {
             // console.log(this.parentNode.parentNode.className);
+
+            // On retire la classe ouvrir de la boite
             boite__modale.classList.remove('ouvrir');
+            // On ajoute la classe fermer de la boite
             boite__modale.classList.add('fermer');
         })
     }
