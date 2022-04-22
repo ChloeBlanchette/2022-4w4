@@ -57,6 +57,7 @@
     background-color: $color__link-hover;
     font-size: 0.8rem;
 
+    // Intégration de l'animation lorsque l'on survole le bouton de d'ouverture avec la souris
     &:hover {
         animation: anim__transition .2s ease-out forwards;
     }
