@@ -1,4 +1,7 @@
 <?php
+
+require_once("options/apparence.php");
+
     function cidw_4w4_enqueue(){
         wp_enqueue_style('main-styles', 
         get_template_directory_uri() . '/style.css',
@@ -29,7 +32,6 @@
     }
 
     add_action('after_setup_theme', 'cidw_4w4_enregistre_menu');
-
 
 
     /* ---------------------------------------------------- afficher une description de choix de menu */

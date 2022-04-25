@@ -13,6 +13,7 @@
 
             // On ajoute la classe ouvrir à celle de la boite
             boite__modale.classList.add('ouvrir');
+            boite__modale__texte.innerHTML = this.parentNode.parentNode.children[0].innerHTML;
         })
     }
 

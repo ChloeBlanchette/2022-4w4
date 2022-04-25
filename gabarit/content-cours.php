@@ -13,12 +13,13 @@
         $nbHeures = get_field("nombre_dheures");
         $departement = get_field("departement");
 
-        $desCours = get_the_content();
+        $descCours = get_the_content();
         /*  $posDebutHeures = strrpos($titre, '(') + 1;
             $posFinHeures = strrpos($titre, ')');
             $nbHeures = substr($titre, $posDebutHeures, $posFinHeures - $posDebutHeures);
         */
     ?>
+    <code class="formation__cours__invisible"><?= $descCours; ?></code>
     <?php the_post_thumbnail('thumbnail'); ?>
     <h2 class="carte__titre">
         <a href="<?php get_permalink(); ?>">
@@ -27,6 +28,6 @@
     </h2>
     <p class="carte__code"><?= substr($titre, 4, 4); ?></p>
     <p><?= $nbHeures; ?></p>
-    <p class="carte__description"><?= wp_trim_words($desCours, 15, "<button class='cours__desc__ouvrir' href='#'> La suite </button>"); ?></p>
+    <p class="carte__description"><?= wp_trim_words($descCours, 15, "<button class='cours__desc__ouvrir' href='#'> La suite </button>"); ?></p>
     <p class="cours__departement"><?= $departement; ?></p>
 </article>

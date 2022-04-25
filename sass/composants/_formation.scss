@@ -1,12 +1,18 @@
-.formation{
+.formation {
     display: flex;
     flex-direction: column;
     background-position: 97% 3%;
     background-repeat: no-repeat;
-    h2{
+    
+    h2 {
         padding-top: 20px;
         margin-left: 20px;
     }
+
+    &__cours__invisible {
+        display: none;
+    }
+
     &__liste{
         padding: 0 20px 20px 20px;
 
