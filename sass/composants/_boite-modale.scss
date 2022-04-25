@@ -10,6 +10,7 @@
     transform: scale(0);
     transition: all 1s ease-in-out;
 
+    // Ajustement de la boite modale selon la taille de l'écran
     @media screen and (min-width:$largeur__media-tablette) {
         top: 15%;
         left: 15%;
