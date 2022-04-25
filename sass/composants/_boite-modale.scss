@@ -50,12 +50,13 @@
 }
  // Ajustement du style du bouton qui permet d'ouvrir la boite modale
 .cours__desc__ouvrir {
-    margin-left: 5px;
-    padding: 1px 4px 1px 4px;
+    margin: 2px 0px 0 5px;
+    padding: 3px 8px 2px 8px;
     font-weight: bold;
     border: none;
     background-color: $color__link-hover;
     font-size: 0.8rem;
+    border-radius: 20px;
 
     // Intégration de l'animation lorsque l'on survole le bouton de d'ouverture avec la souris
     &:hover {

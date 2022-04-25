@@ -1180,12 +1180,13 @@ Navigation categorie cours
 }
 
 .cours__desc__ouvrir {
-  margin-left: 5px;
-  padding: 1px 4px 1px 4px;
+  margin: 2px 0px 0 5px;
+  padding: 3px 8px 2px 8px;
   font-weight: bold;
   border: none;
   background-color: white;
   font-size: 0.8rem;
+  border-radius: 20px;
 }
 
 .cours__desc__ouvrir:hover {
