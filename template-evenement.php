@@ -11,7 +11,6 @@
 
 <main class="site__main">
     <article class="evenement">
-        <h1>------ template evenements ------</h1>
         <?php if (have_posts()): the_post(); ?>
             <h1><?php the_title(); ?></h1>
             

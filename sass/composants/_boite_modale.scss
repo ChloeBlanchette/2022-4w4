@@ -1,37 +1,40 @@
 // Ajustement de la taille, la position et le style de la boite modale
 .boite__modale {
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.boite__modale, .boite__carrousel {
     position: fixed;
-    top: 10%;
-    left: 10%;
+    top: 0%;
+    left: 0%;
+    width: 97vw;
+    height: 100vh;
     border: 5px solid $color__colorbackground-carte;
     background-color: $color__link;
-    width: 80vw;
-    height: 80vh;
     transform: scale(0);
     transition: all 1s ease-in-out;
 
     // Ajustement de la boite modale selon la taille de l'écran
     @media screen and (min-width:$largeur__media-tablette) {
-        top: 15%;
-        left: 15%;
-        width: 70vw;
-        height: 70vh;
-    }
-
-    @media screen and (min-width:$largeur__media-ecran-moyen) {
-        top: 20%;
-        left: 20%;
-        width: 60vw;
-        height: 60vh;
+        top: 25%;
+        left: 25%;
+        width: 50vw;
+        height: 50vh;
     }
 
     // Ajustement du bouton de fermeture de la boite
     &__fermeture {
+        position: absolute;
+        z-index: 1;
         margin: 5px;
         border-radius: 100%;
         border: 3px solid $color__colorbackground-carte;
-        background-color: transparent;
-        color: $color__colorbackground-carte;
+        background-color: $color__colorbackground-carte;
+        color: $color__link-hover;
         font-family: $font__titre;
         font-weight: bold;
         font-size: 1.2rem;
@@ -46,8 +49,8 @@
     &__texte {
         color: $color__link-hover;
         font-family: $font__titre;
-        font-size: 0.9rem;
-        margin: 5%;
+        font-size: 1rem;
+        margin: 45px 25px 25px 25px;
         display: flex;
         justify-content: center;
     }
@@ -79,6 +82,45 @@
     }
 }
 
+.boite__carrousel {
+    top: 12.5%;
+    left: 12.5%;
+    width: 75vw;
+    height: 75vh;
+
+    img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &__navigation {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        bottom: 0;
+        z-index: 1;
+
+        button {
+            width: 15px;
+            height: 15px;
+            margin: 20px 10px;
+            border-radius: 100%;
+            border: none;
+            opacity: 60%;
+            background-color: white;
+            
+            &:focus {
+                opacity: 100%;
+            }
+        }
+    }
+}
+
 // Création de l'animation du survol du bouton d'ouverture
 @keyframes anim__transition {
     0% {
@@ -95,7 +137,8 @@
 // Création de l'animation du survol du bouton de fermeture
 @keyframes anim__fermeture {
     100% {
-        color: $color__link-hover;
+        color: $color__colorbackground-carte;
+        background-color: $color__link-hover;
         border: 3px solid $color__link-hover;
     }
 }

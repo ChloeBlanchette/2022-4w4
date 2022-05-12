@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /**
-Theme name: 2022-4w4 Exercice 4 - Chloé Blanchette
+Theme name: 2022-4w4 TP2 - Chloé Blanchette
 Author: Chloé Blanchette
 Author URI: https://github.com/ChloeBlanchette/
-Description: Exercice 4 dans le cadre du cours 4W4
+Description: Laboratoire 9 dans le cadre du cours 4W4
 Version: 1.0.0
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
@@ -647,6 +647,7 @@ COMPOSANTS
 .site__header {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 576px) {
@@ -657,7 +658,7 @@ COMPOSANTS
 }
 
 .site__header img {
-  margin: 80px 0 0 15px;
+  margin: 25px 0 0 15px;
   text-decoration: none;
   border-radius: 100px;
 }
@@ -792,9 +793,7 @@ COMPOSANTS
 }
 
 #burger {
-  position: absolute;
-  transition: transform 0.3s;
-  margin: 20px 10px 10px 10px;
+  display: block;
 }
 
 @media screen and (min-width: 576px) {
@@ -809,8 +808,8 @@ COMPOSANTS
 
 .site__header__nav {
   display: none;
-  padding: 80px 0 0 0;
   margin: 0;
+  background-color: #e0e0e0;
 }
 
 @media screen and (min-width: 576px) {
@@ -955,6 +954,7 @@ COMPOSANTS
 
 .principal h2 {
   color: #026FB7;
+  text-align: left;
 }
 
 .article {
@@ -1140,55 +1140,56 @@ Navigation categorie cours
 }
 
 .boite__modale {
+  overflow-y: scroll;
+}
+
+.boite__modale::-webkit-scrollbar {
+  display: none;
+}
+
+.boite__modale, .boite__carrousel {
   position: fixed;
-  top: 10%;
-  left: 10%;
+  top: 0%;
+  left: 0%;
+  width: 97vw;
+  height: 100vh;
   border: 5px solid #026FB7;
   background-color: black;
-  width: 80vw;
-  height: 80vh;
   transform: scale(0);
   transition: all 1s ease-in-out;
 }
 
 @media screen and (min-width: 576px) {
-  .boite__modale {
-    top: 15%;
-    left: 15%;
-    width: 70vw;
-    height: 70vh;
+  .boite__modale, .boite__carrousel {
+    top: 25%;
+    left: 25%;
+    width: 50vw;
+    height: 50vh;
   }
 }
 
-@media screen and (min-width: 873px) {
-  .boite__modale {
-    top: 20%;
-    left: 20%;
-    width: 60vw;
-    height: 60vh;
-  }
-}
-
-.boite__modale__fermeture {
+.boite__modale__fermeture, .boite__carrousel__fermeture {
+  position: absolute;
+  z-index: 1;
   margin: 5px;
   border-radius: 100%;
   border: 3px solid #026FB7;
-  background-color: transparent;
-  color: #026FB7;
+  background-color: #026FB7;
+  color: white;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-.boite__modale__fermeture:hover {
+.boite__modale__fermeture:hover, .boite__carrousel__fermeture:hover {
   animation: anim__fermeture .2s ease-out forwards;
 }
 
-.boite__modale__texte {
+.boite__modale__texte, .boite__carrousel__texte {
   color: white;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
-  font-size: 0.9rem;
-  margin: 5%;
+  font-size: 1rem;
+  margin: 45px 25px 25px 25px;
   display: flex;
   justify-content: center;
 }
@@ -1215,6 +1216,45 @@ Navigation categorie cours
   animation: anim__transition .2s ease-out forwards;
 }
 
+.boite__carrousel {
+  top: 12.5%;
+  left: 12.5%;
+  width: 75vw;
+  height: 75vh;
+}
+
+.boite__carrousel img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.boite__carrousel__navigation {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+.boite__carrousel__navigation button {
+  width: 15px;
+  height: 15px;
+  margin: 20px 10px;
+  border-radius: 100%;
+  border: none;
+  opacity: 60%;
+  background-color: white;
+}
+
+.boite__carrousel__navigation button:focus {
+  opacity: 100%;
+}
+
 @keyframes anim__transition {
   0% {
     background-color: white;
@@ -1228,9 +1268,22 @@ Navigation categorie cours
 
 @keyframes anim__fermeture {
   100% {
-    color: white;
+    color: #026FB7;
+    background-color: white;
     border: 3px solid white;
   }
+}
+
+@media screen and (min-width: 576px) {
+  .wp-block-gallery {
+    margin-right: 20px;
+    width: 85%;
+  }
+}
+
+.home .site__main {
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---------------------------------------------------------
@@ -1351,6 +1404,64 @@ ANIMATION
   }
 }
 
+.burger {
+  position: relative;
+  margin: 1rem;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  border-radius: 25%;
+  /*
+    &:hover {
+        .burger__ligne:nth-of-type(1) {
+            clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+        }
+
+        .burger__ligne:nth-of-type(2) {
+            clip-path: polygon(40% 40%, 60% 40%, 60% 60%, 40% 60%);
+        }
+
+        .burger__ligne:nth-of-type(3) {
+            clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+        }
+    }
+    */
+}
+
+.burger .burger__ligne {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #e0e0e0;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%);
+}
+
+.burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+}
+
+.burger .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(40% 40%, 60% 40%, 60% 60%, 40% 60%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -1359,13 +1470,21 @@ body {
 }
 
 .site {
+  max-height: 200vh;
   background-color: white;
   font-family: arial;
   position: relative;
   display: grid;
-  gap: 20px;
+  gap: 0px;
   grid-template-columns: auto;
   grid-template-areas: "sidebar" "header" "main" "footer";
+}
+
+@media screen and (min-width: 576px) {
+  .site {
+    max-height: 150vh;
+    gap: 20px;
+  }
 }
 
 .home::after {
@@ -1417,6 +1536,12 @@ body {
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #e0e0e0;
+  background-color: black;
+}
+
+@media screen and (min-width: 576px) {
+  .site__barre {
+    background: #e0e0e0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
