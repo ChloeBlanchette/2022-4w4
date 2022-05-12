@@ -28,6 +28,7 @@
         </section>
     </div>
 </footer>
+<!-- Ajout de la boite modale -->
 <div class="boite__modale">
     <button class="boite__modale__fermeture">X</button>
     <p class="boite__modale__texte"></p>
