@@ -19,6 +19,7 @@
 
         boite__carrousel__navigation.append(bouton);
 
+        // 4 Lien de boutons et des images pour les changer
         bouton.dataset.index = index++
         bouton.addEventListener('mousedown', function() {
             elmImg.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src'));
