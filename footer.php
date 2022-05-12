@@ -33,6 +33,7 @@
     <button class="boite__modale__fermeture">X</button>
     <p class="boite__modale__texte"></p>
 </div>
+<!-- Ajout de la boite pour le carrousel -->
 <div class="boite__carrousel">
     <button class="boite__carrousel__fermeture">X</button>
     <section class="boite__carrousel__navigation"></section>
