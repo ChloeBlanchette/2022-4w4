@@ -1,6 +1,6 @@
 (function() {
 
-    // Création des variables pour appeler les classes du carrousel
+    // 1 Création des variables pour appeler les classes du carrousel
     let boite__carrousel = document.querySelector(".boite__carrousel");
     let boite__carrousel__fermeture = document.querySelector(".boite__carrousel__fermeture");
     let boite__carrousel__navigation = document.querySelector(".boite__carrousel__navigation");
@@ -11,7 +11,7 @@
 
     let index = 0;
 
-    // Ajout d'une fonction pour l'ouverture de la boite modale
+    // Ajout d'une fonction pour l'ouverture de la boite modale contenant les images du carrousel
     for (const img of galerie__img) {
         
         let bouton = document.createElement('button');
