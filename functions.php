@@ -11,6 +11,7 @@ require_once("options/apparence.php");
 
         wp_enqueue_style('cidw-4w4-google-font', "https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap", false);
         
+        // Modification des fonctions et correction du mot carrousel
         wp_register_script('cidw-4w4-boite-modale',
                             get_template_directory_uri() . '/javascript/boite-modale.js',
                             array(), 
