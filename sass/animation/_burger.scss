@@ -47,6 +47,7 @@
     */
 }
 
+// 7 Animation du bouton burger lorsqu'il est coché (qu'on a cliqué dessus)
 #chk-burger:checked ~ .burger {
 
     .burger__ligne:nth-of-type(1) {
