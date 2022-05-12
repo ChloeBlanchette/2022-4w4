@@ -11,7 +11,7 @@
 
     let index = 0;
 
-    // Ajout d'une fonction pour l'ouverture de la boite modale contenant les images du carrousel
+    // 2 Ajout d'une fonction pour l'ouverture de la boite modale contenant les images du carrousel
     for (const img of galerie__img) {
         
         let bouton = document.createElement('button');
