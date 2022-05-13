@@ -1,5 +1,7 @@
 # 4W4 2022 TP2 - Chloé Blanchette
 
+Github page : https://chloeblanchette.github.io/2022-4w4/
+
 ## Objectifs
 Développer un site constitué de plusieurs modèles,  gabarits de modèle et modèle de page «template» utilisant les champs personnalisés et plusieurs animations Javascript/CSS.
 
