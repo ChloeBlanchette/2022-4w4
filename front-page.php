@@ -20,6 +20,11 @@
     <?php wp_nav_menu(array("menu"=>"evenement",
                             "container"=>"nav")); ?>
 
+    <!----------------------------- Ajout du menu des ateliers ----------------------------->
+    <!------------------------------------ Menu atelier ------------------------------------>
+    <?php wp_nav_menu(array("menu"=>"atelier",
+                            "container"=>"nav")); ?>
+
     <?php if (have_posts()): the_post(); ?>
     <?php the_title(); ?>
     <?php the_content(); ?>
