@@ -15,7 +15,7 @@
             <h1 class="titre__page"><?php the_title(); ?></h1>
             <h2 class="atelier__titre__description">Description de l'Atelier</h2>
             <p class="atelier__animateur">
-                L'animateur de l'atelier : <?php the_field('animateur'); ?></p>
+                L'animateur de l'atelier : <?php the_field('animateur'); ?>
             </p>
             <p class="atelier__local">
                 L'atelier sera donné au local : <?php the_field('local'); ?>

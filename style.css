@@ -1294,6 +1294,25 @@ Navigation categorie cours
   justify-content: center;
 }
 
+.atelier {
+  margin-bottom: 50px;
+}
+
+.atelier__titre__description, .atelier__titre__horaire {
+  text-align: left;
+}
+
+.titre__page {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  .titre__page {
+    margin-top: 0;
+  }
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */

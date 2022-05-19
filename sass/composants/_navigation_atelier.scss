@@ -1,0 +1,18 @@
+.atelier {
+    margin-bottom: 50px;
+
+    &__titre__description, 
+    &__titre__horaire {
+        text-align: left;
+    }
+}
+
+.titre__page {
+    font-family: $font__titre;
+    text-align: center;
+    
+    @media screen and (min-width: $largeur__media-tablette) {
+        margin-top: 0;
+    }
+}
+
